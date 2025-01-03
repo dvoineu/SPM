@@ -28,5 +28,10 @@ public class SPM {
     public static var razeColor: UIColor {
         colorFromHexString("#006736")
     }
+    
+    /// Returns an object of `UIColor` with the second most eye-pleasing color
+    public static var secondaryRazeColor: UIColor {
+        colorFromHexString("FCFFFD")
+    }
 }
 

@@ -16,3 +16,9 @@ import Testing
     let color2 = SPM.razeColor
     #expect(color1 == color2)
 }
+
+@Test func testSecondColorsAreEqual() {
+    let secondaryRazeColor = SPM.secondaryRazeColor
+    let color = SPM.colorFromHexString("FCFFFD")
+    #expect(color == secondaryRazeColor)
+}
