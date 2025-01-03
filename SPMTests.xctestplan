@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "FEE26787-3DE6-480A-90A2-E1D9CAD46233",
+      "name" : "Test Scheme Action",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:",
+        "identifier" : "SPMTests",
+        "name" : "SPMTests"
+      }
+    }
+  ],
+  "version" : 1
+}
