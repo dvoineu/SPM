@@ -10,3 +10,9 @@ import Testing
     let color = SPM.colorFromHexString("FF0000")
     #expect(color == .red)
 }
+
+@Test func testColorsAreEqual() {
+    let color1 = SPM.colorFromHexString("006736")
+    let color2 = SPM.razeColor
+    #expect(color1 == color2)
+}

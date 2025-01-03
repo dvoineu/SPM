@@ -1,6 +1,6 @@
 import UIKit
 
-class SPM {
+public class SPM {
     
     /// Allows to converrt a 6 digit hexstring into a UIColor instance
     /// - Warning: The "#" symbol is stripped from the beginning of the string
@@ -8,7 +8,7 @@ class SPM {
     ///   - hexString: A 6-bit string
     ///   - alpha: A number between 0 and 1
     /// - Returns: A UIColor
-    class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
+    internal class func colorFromHexString(_ hexString: String, alpha: CGFloat = 1.0) -> UIColor {
         let r, g, b: CGFloat
         let offset = hexString.hasPrefix("#") ? 1 : 0
         let start = hexString.index(hexString.startIndex, offsetBy: offset)
@@ -22,6 +22,11 @@ class SPM {
             return UIColor(red: r, green: g, blue: b, alpha: alpha)
         }
         return UIColor(red: 0, green: 0, blue: 0, alpha: alpha)
+    }
+    
+    /// The most eye-pleasing color known to all humanity
+    public static var razeColor: UIColor {
+        colorFromHexString("#006736")
     }
 }
 
